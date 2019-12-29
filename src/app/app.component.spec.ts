@@ -1,11 +1,16 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { HeatElementComponent } from './components/heat-element/heat-element.component';
+import { HeatMapComponent } from './components/heat-map/heat-map.component';
+
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        HeatMapComponent,
+        HeatElementComponent
       ],
     }).compileComponents();
   }));
@@ -26,6 +31,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to heat-map!');
+    expect(compiled.querySelector('h1').textContent).toContain('HeatMap Component!');
   });
 });

@@ -1,0 +1,10 @@
+<div id="heatMapLegend">
+
+  <div class="legend-element border-legend" [class.clicked]="clicked=='green'?true:false"
+      (click)="onClick($event)" style="background-color:green">
+  </div>
+<span class="legend-text">ok</span><br />  
+
+  <div class="legend-element border-legend" [class.clicked]="clicked=='red'?true:false"  (click)="onClick($event)" style="background-color:red"></div><span class="legend-text">critical</span><br />   
+  <div class="legend-element border-legend" [class.clicked]="clicked=='black'?true:false"  (click)="onClick($event)" style="background-color:black"></div><span class="legend-text">All</span>   
+</div>

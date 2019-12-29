@@ -1,0 +1,16 @@
+#heatmap-outer {
+    width: 450px;
+    border: 2px solid blue;
+}
+
+div.elements-rectangle {
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    padding:3px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+
+

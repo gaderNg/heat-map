@@ -1,0 +1,10 @@
+<div id="heatmap-outer">  
+  <app-heat-legend (legendClick)="onClickLegend($event)"></app-heat-legend>
+  <div id="elements-rectangle">
+    <span *ngFor='let cellData of data'>
+      <app-heat-element [cellData]='cellData' (elementHover)="onHover($event)"></app-heat-element>
+    </span>  
+  </div>
+  <div style="clear: both;"> </div>
+</div>
+
